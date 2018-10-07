@@ -20,8 +20,12 @@ def get_text(url):
 
     text = soup.find_all("p")
 
-    for elem in text:
-        print(elem.text)
+    file_name=input("Que nombre quieres para tu archivo?")
+    
+    with open(file_name+'.txt','w') as open_file:
+
+        for elem in text:
+            open_file.write(elem.text)
 
 
 get_text("http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture")

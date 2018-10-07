@@ -15,7 +15,7 @@ i = 0
 
 lista = [""]
 while i <= n:
-    b = raw_input("inserte nombre: ")
+    b = input("inserte nombre: ")
     lista.append(b)
     i+=1
 A = np.array(lista)
@@ -24,11 +24,11 @@ print(lista)
 i = 1
 lista = [""]
 while i <= n:
-    b = raw_input("Inserte edad: ")
+    b = input("Inserte edad: ")
     lista.append(b)
     i+=1
 B= np.array(lista)
-print lista
+print (lista)
 
 bd = {"Nombre": A, "Edad": B}
 BD = pd.DataFrame(data=bd)

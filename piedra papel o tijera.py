@@ -10,8 +10,8 @@ Created on Thu Oct  4 22:24:55 2018
 def iniciar_juego():
     respuestausr1 = input("%s, quieres escojer: Piedra, Papel o Tijera; " % user1)
     respuestausr2 = input("%s quieres escojer: Piedra, Papel o Tijera: " % user2)
-    
-    
+
+
     def comparar(u1,u2):
         if u1 == u2:
             print("Empataron!")
@@ -37,7 +37,7 @@ def iniciar_juego():
             print("Sus respuestas no son validas!")
 
     comparar(respuestausr1,respuestausr2)
-    
+
     NG = input("Quieren iniciar un nuevo juego?: ")
     if NG == "si":
         iniciar_juego()
@@ -54,6 +54,4 @@ NG = input("Quieren iniciar un nuevo juego?: ")
 if NG == "si":
     iniciar_juego()
 else:
-    print("Gracias por jugar: " + user1 + ", "+ user2 + ".")
-
-
+    print("Gracias por jugar: " + user1 + " y "+ user2 + ".")

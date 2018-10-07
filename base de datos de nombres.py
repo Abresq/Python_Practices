@@ -1,12 +1,12 @@
 
 lista = [""]
     
-b = raw_input("nombre: ")
+b = input("nombre: ")
 
-if b = "exit":
+if b == "exit":
     break
 else:
-lista.append(b)
+    lista.append(b)
     
 print(lista)
 

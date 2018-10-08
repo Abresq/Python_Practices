@@ -21,9 +21,5 @@ soup = BeautifulSoup(r.content, 'html.parser')
 tittles = soup.find_all("div", class_="css-k8gosa esl82me3")
 
 for tittle in tittles:
-    if tittle.a:
-        titulos.append(tittle.a.text)
-    else:
-        titulos.append(tittle.text)
-
+    print(tittle.text)
 

@@ -8,7 +8,7 @@ Created on Sat Oct  6 00:45:24 2018
 import random
 import string
 
-longitud = int(raw_input("Que longitud quieres para tu contrasena?: ")) #Dice que tan larga sera la contraseña
+longitud = int(input("Que longitud quieres para tu contrasena?: ")) #Dice que tan larga sera la contraseña
 pwd = "" #declaro la variablñe de password
 count = 0 #declaro count para iniciar una cuenta desde 0
 while count != int(longitud): #mientras que count no sea igual a la longitud que especifique, se seguira corriendo el codigo
@@ -24,4 +24,4 @@ while count != int(longitud): #mientras que count no sea igual a la longitud que
 
 
 if count == longitud: # si el count es igual a la longitud se imprimia la contraseña
-        print pwd
+        print (pwd)
